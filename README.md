@@ -26,7 +26,7 @@ YYZ --> YYC (6/26/2014 12:00:00 --> 6/26/2014 14:09:00) - $630.00
 
 ## test suite
 
-This app is supported with test suite coverage, that automates checking the functions that the app is built on, these functions were modularized to improve testability as well as versatility
+This app is supported with test suite coverage, this automates checking the functions that the app relies on, these functions were modularized to improve testability as well as versatility
 
 To run the test suite:
 
