@@ -159,6 +159,7 @@ appFunctions = {
     makeDatesUniform: makeDatesUniform,
     correctRoute: correctRoute,
     removeDupes: removeDupes,
+    formatFlights: formatFlights
 }
 
 module.exports = appFunctions;

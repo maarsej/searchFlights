@@ -79,3 +79,10 @@ describe ("remove dupes", () => {
         assert.deepEqual(app.removeDupes([{ orig: 'YVR', depTime: '6/18/2014 9:10:00', dest: 'YYZ', destTime: '6/18/2014 19:47:00', price: '$1093.00' },{ orig: 'YVR', depTime: '6/18/2014 9:10:00', dest: 'YYZ', destTime: '6/18/2014 19:47:00', price: '$1093.00' }]),[{ orig: 'YVR', depTime: '6/18/2014 9:10:00', dest: 'YYZ', destTime: '6/18/2014 19:47:00', price: '$1093.00' }])
     })
 })
+
+describe ("format flights", () => {
+
+    it("[{orig: 'YYZ',depTime: '6/15/2014 6:45:00' ,dest: 'YYC', destTime: '6/15/2014 8:54:00', price: '$578.00'}]) --> [YYZ --> YYC (6/15/2014 6:45:00 --> 6/15/2014 8:54:00) - $578.00]", () => {
+        assert.deepEqual(app.formatFlights([{orig: 'YYZ',depTime: '6/15/2014 6:45:00' ,dest: 'YYC', destTime: '6/15/2014 8:54:00', price: '$578.00'}]), ["YYZ --> YYC (6/15/2014 6:45:00 --> 6/15/2014 8:54:00) - $578.00"])
+    })
+})
