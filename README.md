@@ -10,15 +10,13 @@ After cloning this repository and changing into its main directory, run the foll
 npm install
 
 npm start
-
 ```
 
 Following those commands you will find the app running at localhost:8080
 
 Example search (as a url): http://localhost:8080/searchFlights/YYZ/YYC
 
-This search will return results in the command line, this output will be sorted by price followed by departure date,
-continuing with our example the output would be as follows: 
+This search will return results in the command line, this output will be sorted by price followed by departure date, continuing with our example the output would be as follows: 
 
 ```
 YYZ --> YYC (6/15/2014 6:45:00 --> 6/15/2014 8:54:00) - $578.00
